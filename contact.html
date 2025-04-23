@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="icon" href="https://i.postimg.cc/9F0qNNzs/favicon-16x16.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/9F0qNNzs/favicon-16x16.png" type="image/png">
+    <title>Fale conosco</title>
+    <style>
+        body{
+            font-family: aral, Arial, sans-serif;
+            background: #8B4513;
+            margin: 0;
+            padding: 0;
+        }
+    .container{
+        max-width: 600px;
+        margin: 50px auto;
+        background: #f2f2f2;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(97, 68, 43, 0.2);}
+
+        .logo{
+            text-align: center;
+            margin-bottom: 20px;
+    }
+    .logo img{
+        border-radius: 50%;
+        border: 3px solid #f2f2f2;
+    }
+    label{
+        display: block;
+        margin-top: 20px;
+        font-weight: bold;
+        color: #5a3e2b;
+    }
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #bfa895;
+            box-sizing: border-box;
+            background-color: #fef9f5;
+        }
+        ::-webkit-scrollbar{
+    width: 18px;
+ }
+ ::-webkit-scrollbar-track{
+    background: #121212;
+ }
+ ::-webkit-scrollbar-thumb{
+    background: #8B4513;
+    border-radius: 12px;
+    border: 3px solid #121212;
+ }
+
+        textarea{
+            resize: vertical;
+        }
+        button{
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #7a5230;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5e3c23;
+            }
+
+        .button:hover {
+            background-color: #5e3c23;
+        }
+        
+        .footer{
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #7a5230;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="logo">
+        <img src="https://i.postimg.cc/FFJdQJhH/logo-da-emp.jpg" alt="logo" width="150">
+     </div>
+        <form action="mailto:shonguilev@gmail.com" method="post" enctype="text/plain">
+            <label for="nome">Nome</label>
+            <input type="text" name="" id="nome" name="nome" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+            <button><a href="index.html" rel="prev"  style="color: white;">Voltar</a></button>
+        </form>
+        <div class="footer">&copy; 2025 Energy Fashon. Todos os direitos reservados</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.postimg.cc/9F0qNNzs/favicon-16x16.png" type="image/x-icon">
+    <title>Sobre Nós - Energy Fashion</title>
+    <style>
+
+::-webkit-scrollbar{
+    width: 18px;
+ }
+ ::-webkit-scrollbar-track{
+    background: #121212;
+ }
+ ::-webkit-scrollbar-thumb{
+    background: #8B4513;
+    border-radius: 12px;
+    border: 3px solid #121212;
+ }
+
+
+        :root {
+            --primary-brown: #8B4513;
+            --light-brown: #D2B48C;
+            --dark-brown: #5D4037;
+            --cream: #F5F5DC;
+            --text-dark: #333333;
+            --text-light: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            background-color: var(--cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .about-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .about-header h1 {
+            font-size: 2.8rem;
+            color: var(--dark-brown);
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .about-header h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: var(--primary-brown);
+        }
+        
+        .about-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--text-dark);
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .about-text h2 {
+            color: var(--primary-brown);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-values {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .value-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .value-icon {
+            font-size: 2.5rem;
+            color: var(--primary-brown);
+            margin-bottom: 20px;
+        }
+        
+        .value-card h3 {
+            color: var(--dark-brown);
+            margin-bottom: 15px;
+        }
+        
+        .team-section {
+            margin-top: 70px;
+            text-align: center;
+        }
+        
+        .team-section h2 {
+            font-size: 2rem;
+            color: var(--dark-brown);
+            margin-bottom: 40px;
+        }
+        
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .team-member {
+            width: 250px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .member-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .team-member:hover .member-image img {
+            transform: scale(1.1);
+        }
+        
+        .member-info {
+            padding: 20px;
+        }
+        
+        .member-info h3 {
+            color: var(--dark-brown);
+            margin-bottom: 5px;
+        }
+        
+        .member-info p {
+            color: var(--primary-brown);
+            font-style: italic;
+        }
+        button{
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #7a5230;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5e3c23;
+            }
+
+        .button:hover {
+            background-color: #5e3c23;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <div class="about-header">
+            <h1>Nossa História</h1>
+            <p>Descubra a essência por trás da nossa marca de moda e o que nos torna únicos no mundo fashion.</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Quem Somos</h2>
+                <p>Fundada em 2024, Energy Fashion da paixão por moda autêntica e sustentável. Começamos como uma pequena loja local e hoje somos uma referência em estilo e qualidade, atendendo clientes em todo o país.</p>
+                
+                <p>Nossa missão é oferecer peças que combinam tendências contemporâneas com um toque atemporal, sempre com respeito ao meio ambiente e às pessoas envolvidas em nossa cadeia produtiva.</p>
+                
+                <p>Cada coleção é cuidadosamente planejada para refletir nossa filosofia de moda consciente sem abrir mão do estilo e da elegância que nossos clientes merecem.</p>
+            </div>
+            
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Equipe de moda trabalhando">
+            </div>
+        </div>
+        <div class="about-values">
+            <div class="value-card">
+                <div class="value-icon">♻️</div>
+                <h3>Sustentabilidade</h3>
+                <p>Utilizamos materiais eco-friendly e processos produtivos que minimizam o impacto ambiental.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">✂️</div>
+                <h3>Qualidade</h3>
+                <p>Cada peça é feita com os melhores materiais e atenção aos detalhes, garantindo durabilidade.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">❤️</div>
+                <h3>Paixão pela Moda</h3>
+                <p>Nossa equipe é movida pela criatividade e amor por vestir pessoas com estilo e personalidade.</p>
+            </div>
+            
+            <div class="value-card">
+                <div class="value-icon">🌍</div>
+                <h3>Responsabilidade Social</h3>
+                <p>Trabalhamos com comunidades locais e garantimos condições justas para todos os colaboradores.</p>
+            </div>
+        </div>
+        
+        <div class="team-section">
+            <h2>Conheça a Nossa Equipe</h2>
+            
+            <div class="team-members">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://i.postimg.cc/K8Lj6Xbp/4bf32ae5f06735b1d83174e9c90a385b.jpg" alt="Diretora Geral">
+                    </div>
+                    <div class="member-info">
+                        <h3><a href="https://www.instagram.com/shong_leeee?igsh=MXB0bDBscHBxb2hrZQ==" target="_blank" style="color: #5e3c23;">Shonguile</a> Vilanculos</h3>
+                        <p>Diretora Geral</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://i.postimg.cc/K8Lj6Xbp/4bf32ae5f06735b1d83174e9c90a385b.jpg" alt="Diretora Comercial">
+                    </div>
+                    <div class="member-info">
+                        <h3><a href="https://www.instagram.com/adelaide_vilanculos?igsh=dWJqamtpdjJkdm9i" target="_blank" style="color: #5e3c23;">Adelaide</a> Vilanculos</h3>
+                        <p>Diretora Comercial</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://i.postimg.cc/K8Lj6Xbp/4bf32ae5f06735b1d83174e9c90a385b.jpg" alt="Designer Chefe">
+                    </div>
+                    <div class="member-info">
+                        <h3><a href="https://www.instagram.com/kelv_caz?igsh=Yjh3am5pN2pjejYx" target="_blank" style="color: #5e3c23;">Kelvin Cazança</a></h3>
+                        <p>Designer Chefe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button><a href="index.html" rel="prev"  style="color: white;">Voltar</a></button>
+</body>
+</html>
